@@ -1,0 +1,59 @@
+div {
+  text-align: center;
+}
+
+p {
+max-width: 400px;
+}
+
+h1 {
+ font-family: 'Barlow', "Arial", sans-serif;
+ font-size: 30px;
+}
+
+body {
+  font-family: "Playfair Display", "Times", serif;
+  color: #fff;
+  background: #754364;
+  padding: 2em;
+}
+
+.album-cover {
+ max-height: 400px;
+cursor: pointer;
+}
+
+/* flexbox */
+article {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+/* my pseudo classes */
+a {
+    color: #379CB2;
+}
+a:hover {
+    color: #82E8FF;
+}
+
+/* media queries  */
+@media screen and (max-width: 600px) {
+ body {
+   margin: 1rem;
+   padding: 1rem;
+ }
+  p {
+  max-width: 500px;
+  }
+  img {
+  max-height: 225px;
+}
+  .album-cover {
+   max-width: 300px;
+   max-height: 150px;
+ }
+
+}

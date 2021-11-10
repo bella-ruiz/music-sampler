@@ -4,7 +4,6 @@ div {
 
 p {
 max-width: 400px;
-text-align: left;
 }
 
 html {
@@ -20,12 +19,13 @@ body {
   font-family: "Playfair Display", "Times", serif;
   color: #fff;
   background: #754364;
-  padding: 2em;
+  padding-bottom: 2rem;
+
 }
 
 .album-cover {
  max-height: 400px;
- cursor: pointer;
+cursor: pointer;
 }
 
 /* flexbox */
@@ -38,27 +38,37 @@ article {
 }
 /* my pseudo classes */
 a {
-    color: #a3acff;
+    color: #379CB2;
 }
 a:hover {
-    color: #4557ff;
+    color: #82E8FF;
 }
 
 /* media queries  */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 455px) {
  body {
-   margin: 1rem;
+   margin: 2rem;
    padding: 1rem;
  }
   p {
   max-width: 500px;
   }
   img {
-  max-height: 225px;
+  max-height: 200px;
+
+}
+
+article {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+
 }
   .album-cover {
-   max-width: 300px;
-   max-height: 150px;
+   max-width: 140px;
+   max-height: 130px;
+cursor: pointer;
+
  }
 
 }

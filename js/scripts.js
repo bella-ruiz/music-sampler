@@ -13,7 +13,7 @@ function hideAll() {
 // run that function right away
 hideAll();
 
-// when any animal is clicked, make the suitable div appear
+
 albumCovers.forEach(function(el) {
   el.onclick = (e) => {
     // hide all the divs to ensure that only one will be open
